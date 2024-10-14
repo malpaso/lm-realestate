@@ -1,0 +1,9 @@
+{
+    "name": "lucky-media/real-estate",
+    "extra": {
+        "statamic": {
+            "name": "Real Estate",
+            "description": "Real Estate starter kit"
+        }
+    }
+}

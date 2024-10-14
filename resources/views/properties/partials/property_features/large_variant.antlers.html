@@ -1,0 +1,19 @@
+<div class="mt-12 md:flex max-md:space-y-8 md:items-center md:justify-between rounded-2xl bg-dark-90 {{ class }}">
+    {{ property_features :limit="features_limit" }}
+        <div>
+            <x-text color="light">{{ type | title | replace('_', ' ') }}</x-text>
+            <div class="flex items-center mt-2">
+                <div class="w-6 h-6 mr-2 shrink-0">
+                    {{ icon }}
+                </div>
+
+                <x-text size="sm" weight="700" color="dark">
+                    {{ description }}
+                    {{ if type == 'property_size' }}
+                        {{ theme:unit_of_measurement }}
+                    {{ /if }}
+                </x-text>
+            </div>
+        </div>
+    {{ /property_features }}
+</div>
